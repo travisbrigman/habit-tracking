@@ -11,8 +11,8 @@ import SwiftUI
 struct ModifyHabitView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var habits: Activities
-    @State private var title: String
-    @State private var description: String
+    @State private var title = ""
+    @State private var description = ""
     
     var body: some View {
         

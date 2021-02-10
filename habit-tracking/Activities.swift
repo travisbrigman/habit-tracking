@@ -14,14 +14,13 @@ class Activities: ObservableObject {
             let encoder = JSONEncoder()
             
             if let encoded = try? encoder.encode(activities) {
-                UserDefaults.standard.set(encoded, forKey: "Items")
+                UserDefaults.standard.set(encoded, forKey: "activities")
             }
-            
         }
     }
     
     init() {
-        if let items = UserDefaults.standard.data(forKey: "Items") {
+        if let items = UserDefaults.standard.data(forKey: "activities") {
             let decoder = JSONDecoder()
             
             if let decoded = try? decoder.decode([SingleActivity].self, from: items ) {
