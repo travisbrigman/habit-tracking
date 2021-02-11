@@ -18,6 +18,7 @@ struct ContentView: View {
             List {
                 ForEach(habits.activities) {
                     habit in HStack {
+                        NavigationLink(destination: HabitView(habit: habit)) {
                         VStack {
                             Text(habit.activityTitle)
                                 .font(.headline)
@@ -25,7 +26,7 @@ struct ContentView: View {
                         }
                         Spacer()
                         Text("\(habit.activityCompleted)")
-                            
+                        }
                     }
                 }
                 .onDelete(perform: removeItems)

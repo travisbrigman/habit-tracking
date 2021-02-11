@@ -21,15 +21,16 @@ struct ModifyHabitView: View {
                 TextField("Title", text: $title)
                 TextField("Description", text: $description)
             }
-        }
-        .navigationBarTitle("Add New Habit")
-        .navigationBarItems(trailing: Button("Save"){
-
-            let habit = SingleActivity(activityTitle: self.title, activityDescription: self.description, activityCompleted: 0)
+                
+            .navigationBarTitle("Add New Habit")
+            .navigationBarItems(trailing: Button("Save"){
+                
+                let habit = SingleActivity(activityTitle: self.title, activityDescription: self.description, activityCompleted: 0)
                 self.habits.activities.append(habit)
                 self.presentationMode.wrappedValue.dismiss()
-            
-        })
+                
+            })
+        }
     }
 }
 

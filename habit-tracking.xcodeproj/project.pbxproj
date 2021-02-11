@@ -18,6 +18,7 @@
 		0F17708325D441500043236B /* ModifyHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17708225D441500043236B /* ModifyHabitView.swift */; };
 		0F17708C25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.15.58 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F17708A25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.15.58 PM.png */; };
 		0F17708D25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.16.41 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F17708B25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.16.41 PM.png */; };
+		0F17708F25D4DCAA0043236B /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17708E25D4DCAA0043236B /* HabitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0F17708225D441500043236B /* ModifyHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyHabitView.swift; sourceTree = "<group>"; };
 		0F17708A25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.15.58 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-02-10 at 12.15.58 PM.png"; sourceTree = "<group>"; };
 		0F17708B25D45BAE0043236B /* Screen Shot 2021-02-10 at 12.16.41 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-02-10 at 12.16.41 PM.png"; sourceTree = "<group>"; };
+		0F17708E25D4DCAA0043236B /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0F17706A25D433900043236B /* AppDelegate.swift */,
 				0F17706C25D433900043236B /* SceneDelegate.swift */,
 				0F17706E25D433900043236B /* ContentView.swift */,
+				0F17708E25D4DCAA0043236B /* HabitView.swift */,
 				0F17708225D441500043236B /* ModifyHabitView.swift */,
 				0F17707025D433940043236B /* Assets.xcassets */,
 				0F17707525D433940043236B /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				0F17706D25D433900043236B /* SceneDelegate.swift in Sources */,
 				0F17707F25D433F80043236B /* SingleActivity.swift in Sources */,
 				0F17708325D441500043236B /* ModifyHabitView.swift in Sources */,
+				0F17708F25D4DCAA0043236B /* HabitView.swift in Sources */,
 				0F17708125D435310043236B /* Activities.swift in Sources */,
 				0F17706F25D433900043236B /* ContentView.swift in Sources */,
 			);
