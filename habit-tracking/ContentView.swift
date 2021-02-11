@@ -16,16 +16,16 @@ struct ContentView: View {
     var body: some View {
                 NavigationView {
             List {
-                ForEach(habits.activities) {
-                    habit in HStack {
-                        NavigationLink(destination: HabitView(habit: habit)) {
+                ForEach(habits.activities.indices) {
+                    index in HStack {
+                        NavigationLink(destination: HabitView(index: index, habits: self.habits)) {
                         VStack {
-                            Text(habit.activityTitle)
+                            Text(self.habits.activities[index].activityTitle)
                                 .font(.headline)
-                            Text(habit.activityDescription)
+                            Text(self.habits.activities[index].activityDescription)
                         }
                         Spacer()
-                        Text("\(habit.activityCompleted)")
+                            Text("\(self.habits.activities[index].activityCompleted)")
                         }
                     }
                 }

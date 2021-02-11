@@ -8,17 +8,18 @@
 
 import SwiftUI
 
-
 struct HabitView: View {
-    var habit: SingleActivity
-    
+//    var habit: SingleActivity
+    var index: Int
+    @ObservedObject var habits: Activities
+
     var body: some View {
         VStack {
-        Text(habit.activityTitle)
-        Text(habit.activityDescription)
-        Text("\(habit.activityCompleted)")
+            Text(habits.activities[index].activityTitle)
+            Text(habits.activities[index].activityDescription)
+            Text("\(habits.activities[index].activityCompleted)")
             Button("add"){
-                //self.habit.activityCompleted += 1
+                self.habits.activities[self.index].activityCompleted += 1
             }
         }
     }
@@ -26,6 +27,6 @@ struct HabitView: View {
 
 struct HabitView_Previews: PreviewProvider {
  static var previews: some View {
-        HabitView(habit: SingleActivity(activityTitle: "Foo", activityDescription: "Bar", activityCompleted: 5))
+    HabitView(index: 0, habits: Activities())
     }
 }
